@@ -26,8 +26,8 @@ use App\Http\Controllers\website\CheckoutController;
 
 Route::middleware('lang')->group(function () {
 
-    Route::get('About', [AboutController::class , 'index']);
-    Route::get('Checkout',[CheckoutController::class, 'index']);
+    Route::get('/about', [AboutController::class , 'index']);
+    Route::get('/checkout',[CheckoutController::class, 'index']);
     Route::get('/shop-single', [ShopController::class, 'index']);
     Route::get('/cart', [CartController::class, 'index']);
     Route::get('', [HomeController::class, 'index']);
